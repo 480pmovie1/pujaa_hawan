@@ -1,139 +1,197 @@
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>पूजा एवं हवन सामग्री</title>
-  <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
+<html lang="hi"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>आरती माँ सरस्वती जी की (Hindi) | Maa Saraswati Aarti</title>
+  <meta name="description" content="आरती माँ सरस्वती जी की — सुंदर, प्रिंट-फ्रेंडली, मोबाइल-रेडी वेब पेज Bootstrap के साथ।">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Google Fonts: Hindi friendly -->
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&amp;family=Noto+Sans+Devanagari:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Hind', sans-serif;
-      margin: 0;
-      background-color: #fff7ed;
+    :root{
+      --bg: #faf7ff;
+      --card: #ffffff;
+      --ink: #1f1f1f;
+      --ink-muted: #5c5c5c;
+      --brand: #7c3aed; /* violet-600 */
+      --brand-2: #22c55e; /* green-500 */
+      --ring: #c4b5fd; /* violet-300 */
+      --shadow: 0 10px 30px rgba(124, 58, 237, .08);
     }
-
-    header {
-      background-color: #dc2626;
-      color: white;
-      padding: 16px;
-      text-align: center;
-      font-weight: bold;
-      font-size: 20px;
+    [data-theme="dark"]{
+      --bg: #0b0a10;
+      --card: #14131b;
+      --ink: #f1f1f1;
+      --ink-muted: #b7b7c0;
+      --brand: #a78bfa;
+      --brand-2: #34d399;
+      --ring: #4c1d95;
+      --shadow: 0 10px 30px rgba(0,0,0,.45);
     }
-
-    .section {
-      padding: 16px;
+    html, body {font-family: 'Hind','Noto Sans Devanagari', system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background: var(--bg); color: var(--ink);}    
+    .navbar{backdrop-filter: saturate(140%) blur(6px);}
+    .brand-badge{letter-spacing:.06em}
+    .hero{
+      background: radial-gradient(1200px 600px at 10% -20%, rgba(124,58,237,.15), transparent),
+                  radial-gradient(900px 500px at 110% -10%, rgba(34,197,94,.12), transparent);
     }
-
-    h2 {
-      color: #1d4ed8;
-      border-bottom: 2px solid #1d4ed8;
-      padding-bottom: 4px;
-    }
-
-    .samagri-box {
-      background-color: #fef3c7;
-      border-left: 6px solid #f97316;
-      padding: 12px;
-      margin-bottom: 16px;
-      border-radius: 8px;
-    }
-
-    .samagri-box h3 {
-      margin: 0 0 8px;
-      color: #c2410c;
-    }
-
-    ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    .vidhi {
-      background-color: #e0f2fe;
-      padding: 12px;
-      border-radius: 8px;
-      margin-top: 12px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 16px;
-      background-color: #16a34a;
-      color: white;
-      font-weight: bold;
+    .aarti-card{background: var(--card); border: 1px solid rgba(124,58,237,.15); box-shadow: var(--shadow);}
+    .mantra{font-size: 1.34rem; line-height: 1.9;}
+    .mantra p{margin-bottom: .9rem}
+    .doha{font-weight:600; color: var(--brand)}
+    .divider{height:2px; background: linear-gradient(90deg, transparent, var(--ring), transparent); opacity:.75}
+    .pill{border:1px solid rgba(124,58,237,.25); background: rgba(124,58,237,.06)}
+    .btn-brand{background: var(--brand); color:#fff; border: none}
+    .btn-brand:hover{filter: brightness(1.05)}
+    .btn-ghost{border:1px solid rgba(124,58,237,.35)}
+    .shadow-soft{box-shadow: var(--shadow)}
+    .ornament{opacity:.45; transform: rotate(8deg)}
+    @media print{
+      .no-print{display:none!important}
+      body{background:#fff}
+      .aarti-card{box-shadow:none;border:none}
     }
   </style>
 </head>
-<body>
-
-  <header>🪔 पूजा एवं हवन सामग्री</header>
-
-  <div class="section">
-
-    <h2>📌 प्रमुख सामग्रियाँ</h2>
-
-    <div class="samagri-box">
-      <h3>गृह प्रवेश पूजा</h3>
-      <ul>
-        <li>कलश (तांबे या मिट्टी का)</li>
-        <li>मौली, रोली, अक्षत</li>
-        <li>आम या अशोक के पत्ते</li>
-        <li>नारियल</li>
-        <li>गंगाजल</li>
-        <li>धूप, दीपक, कपूर</li>
-        <li>चावल, फूल, फल, पंचमेवा</li>
-        <li>सिंदूर, हल्दी, गौमूत्र</li>
-      </ul>
-      <div class="vidhi">
-        <strong>विधि:</strong> मुख्य द्वार पर कलश स्थापना करें, पंचदेव का आवाहन करें, फिर गृह प्रवेश से पूर्व मंगलाचरण, दीप प्रज्वलन, हवन करें।
+<body data-theme="light">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top border-bottom" style="background:rgba(255,255,255,.7)" id="topNav" aria-label="मुख्य नेविगेशन">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <span class="badge rounded-pill text-bg-light pill brand-badge">ॐ</span>
+        <strong>माँ सरस्वती आरती</strong>
+      </a>
+      <div class="d-flex gap-2 ms-auto">
+        <button class="btn btn-sm btn-ghost" id="toggleThemeBtn" type="button" title="डार्क मोड / लाइट मोड">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <a class="btn btn-sm btn-brand" href="#aarti">आरती देखें</a>
       </div>
     </div>
+  </nav>
 
-    <div class="samagri-box">
-      <h3>हनुमान जी हवन</h3>
-      <ul>
-        <li>लाल वस्त्र</li>
-        <li>चमेली का तेल, सिंदूर</li>
-        <li>गुड़, नारियल, लौंग</li>
-        <li>घी, हवन सामग्री</li>
-        <li>हनुमान चालीसा पुस्तक</li>
-      </ul>
-      <div class="vidhi">
-        <strong>विधि:</strong> संकल्प लेकर हनुमान चालीसा का पाठ करें, फिर 11 आहुति दें – "ॐ हं हनुमते नमः स्वाहा"।
+  <!-- Hero -->
+  
+
+  <div class="divider"></div>
+
+  <!-- Aarti Card -->
+  <main class="py-5" id="aarti">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9 col-xl-8">
+          <article class="aarti-card rounded-4 p-4 p-md-5">
+            <header class="mb-3">
+              <div class="d-flex align-items-center gap-2 mb-1">
+                <span class="badge text-bg-light pill small">आरती</span>
+                <span class="text-secondary small">हिंदी • देवनागरी</span>
+              </div>
+              <h2 class="h1 mb-0">🌼 आरती माँ सरस्वती जी की</h2>
+              <p class="text-secondary mb-0">बसंत पंचमी और दैनिक पूजन हेतु उपयुक्त</p>
+            </header>
+
+            <section class="mantra" id="aartiText" aria-label="आरती का पाठ">
+<p><strong>जय सरस्वती माता, मैया जय सरस्वती माता।<br>सद्गुण वैभव शालिनी, त्रिभुवन विख्याता॥</strong></p>
+
+<p><em>(जय सरस्वती माता...)</em></p>
+
+<p>चंद्रवदनी पद्मासिनी, द्युतिमंगला।<br>वीणा पुस्तक हस्तिनी, मालक माला॥</p>
+
+<p><em>(जय सरस्वती माता...)</em></p>
+
+<p>कीरत शिव-शंकर माता, ब्रह्मा-विष्णु वंदिता।<br>प्रणव स्वरूपिणी माता, भक्ति प्रदाता॥</p>
+
+<p><em>(जय सरस्वती माता...)</em></p>
+
+<p>सत्यज्ञान दायिनी माता, सुख संपत्ति कारी।<br>दुष्ट दमन करणि माता, विघ्न विनाशिनी॥</p>
+
+<p><em>(जय सरस्वती माता...)</em></p>
+
+<p>दे वीणा-रवकारिणी, गान रसिनी।<br>पाप हरो भव-दुख-नाशो, मोक्ष-प्रदायिनी॥</p>
+
+<p class="doha">॥ इति आरती ॥</p>
+            </section>
+
+            <hr class="my-4">
+
+            <section aria-label="पूजन विधि संक्षेप">
+              <h3 class="h5">संक्षेप पूजन-विधि</h3>
+              <ol class="text-secondary">
+                <li>स्वच्छ आसन पर पूर्व या उत्तर की ओर मुख करके बैठें।</li>
+                <li>दीप, धूप, पुष्प अर्पित कर आरती का पाठ करें।</li>
+                <li>छात्र/विद्यार्थी पुस्तक/कलम पर तिलक लगाकर आशीर्वाद लें।</li>
+              </ol>
+            </section>
+
+            <footer class="mt-4 d-flex flex-wrap gap-2 no-print">
+              <a class="btn btn-ghost" href="#topNav"><i class="bi bi-arrow-up"></i> ऊपर जाएँ</a>
+              <button class="btn btn-outline-primary" id="toggleFont"><i class="bi bi-type"></i> बड़ा फ़ॉन्ट</button>
+            </footer>
+          </article>
+        </div>
       </div>
     </div>
+  </main>
 
-    <div class="samagri-box">
-      <h3>सामान्य हवन सामग्री</h3>
-      <ul>
-        <li>समिधा (आम, पलाश की)</li>
-        <li>हवन कुंड, चावल, तिल, जौ</li>
-        <li>घी, कपूर, लोहबान</li>
-        <li>हवन सामग्री मिश्रण (बाजार से)</li>
-      </ul>
-      <div class="vidhi">
-        <strong>विधि:</strong> अग्नि प्रज्वलन के बाद प्रत्येक मंत्र पर "स्वाहा" कहते हुए आहुति दें।
-      </div>
+  <footer class="py-4 border-top text-center small text-secondary">
+    <div class="container">
+      <span>© <span id="year">2025</span> आरती संग्रह • निशुल्क उपयोग</span>
     </div>
-    <div class="samagri-box">
-      <h3>सामान्य हवन सामग्री</h3>
-      <ul>
-        <li>समिधा (आम, पलाश की)</li>
-        <li>हवन कुंड, चावल, तिल, जौ</li>
-        <li>घी, कपूर, लोहबान</li>
-        <li>हवन सामग्री मिश्रण (बाजार से)</li>
-      </ul>
-      <div class="vidhi">
-        <strong>विधि:</strong> अग्नि प्रज्वलन के बाद प्रत्येक मंत्र पर "स्वाहा" कहते हुए आहुति दें।
-      </div>
-    </div>
-
-  </div>
-
-  <footer>
-    🌺 शुभ कार्य में शुभ विचारों से करें आरंभ 🌺
   </footer>
 
-</body>
-</html>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Theme toggle with localStorage
+    const root = document.documentElement;
+    const toggleBtn = document.getElementById('toggleThemeBtn');
+    const savedTheme = localStorage.getItem('theme-preference');
+    if (savedTheme) document.body.setAttribute('data-theme', savedTheme);
+    toggleBtn.addEventListener('click', () => {
+      const next = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.body.setAttribute('data-theme', next);
+      localStorage.setItem('theme-preference', next);
+    });
+
+    // Copy aarti text
+    const copyBtn = document.getElementById('copyBtn');
+    copyBtn?.addEventListener('click', async () => {
+      const text = document.getElementById('aartiText').innerText.trim();
+      try{
+        await navigator.clipboard.writeText(text);
+        copyBtn.innerHTML = '<i class="bi bi-clipboard-check"></i> कॉपी हो गया';
+        setTimeout(()=> copyBtn.innerHTML = '<i class="bi bi-clipboard"></i> कॉपी टेक्स्ट', 1800);
+      } catch(e){
+        alert('कॉपी करने में समस्या हुई।');
+      }
+    });
+
+    // Download TXT
+    document.getElementById('downloadTxt')?.addEventListener('click', () => {
+      const blob = new Blob([document.getElementById('aartiText').innerText], {type: 'text/plain;charset=utf-8'});
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'Maa-Saraswati-Aarti-Hindi.txt';
+      a.click();
+      URL.revokeObjectURL(a.href);
+    });
+
+    // Increase/Decrease font size toggle
+    const mantraEl = document.querySelector('.mantra');
+    const toggleFont = document.getElementById('toggleFont');
+    let big = false;
+    toggleFont?.addEventListener('click', () => {
+      big = !big;
+      mantraEl.style.fontSize = big ? '1.55rem' : '1.34rem';
+      toggleFont.innerHTML = big ? '<i class="bi bi-type"></i> सामान्य फ़ॉन्ट' : '<i class="bi bi-type"></i> बड़ा फ़ॉन्ट';
+    });
+  </script>
+
+
+</body></html>
