@@ -1,134 +1,102 @@
-<html lang="hi"><head>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>आरती माँ सरस्वती जी की (Hindi) | Maa Saraswati Aarti</title>
-  <meta name="description" content="आरती माँ सरस्वती जी की — सुंदर, प्रिंट-फ्रेंडली, मोबाइल-रेडी वेब पेज Bootstrap के साथ।">
-  <meta name="theme-color" content="#ffffff">
-  <!-- Google Fonts: Hindi friendly -->
-  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&amp;family=Noto+Sans+Devanagari:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <title>🌼 आरती माँ सरस्वती जी की</title>
+  <meta name="description" content="ॐ जय सरस्वती माता — माँ सरस्वती जी की आरती, मोबाइल व प्रिंट फ्रेंडली।">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <style>
     :root{
-      --bg: #faf7ff;
+      --bg: #fff8f0;
       --card: #ffffff;
-      --ink: #1f1f1f;
-      --ink-muted: #5c5c5c;
-      --brand: #7c3aed; /* violet-600 */
-      --brand-2: #22c55e; /* green-500 */
-      --ring: #c4b5fd; /* violet-300 */
-      --shadow: 0 10px 30px rgba(124, 58, 237, .08);
+      --ink: #2b1b00;
+      --ink-muted: #775f3c;
+      --brand: #e67e22; /* saffron */
+      --brand-2: #d35400; /* deep orange */
+      --ring: #f39c12; /* golden */
+      --shadow: 0 10px 30px rgba(243, 156, 18, .2);
     }
-    [data-theme="dark"]{
-      --bg: #0b0a10;
-      --card: #14131b;
-      --ink: #f1f1f1;
-      --ink-muted: #b7b7c0;
-      --brand: #a78bfa;
-      --brand-2: #34d399;
-      --ring: #4c1d95;
-      --shadow: 0 10px 30px rgba(0,0,0,.45);
+    body{font-family:'Hind','Noto Sans Devanagari',sans-serif;background:var(--bg);color:var(--ink);}
+    .aarti-card{
+      background: var(--card);
+      border: 2px solid var(--ring);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
     }
-    html, body {font-family: 'Hind','Noto Sans Devanagari', system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background: var(--bg); color: var(--ink);}    
-    .navbar{backdrop-filter: saturate(140%) blur(6px);}
-    .brand-badge{letter-spacing:.06em}
-    .hero{
-      background: radial-gradient(1200px 600px at 10% -20%, rgba(124,58,237,.15), transparent),
-                  radial-gradient(900px 500px at 110% -10%, rgba(34,197,94,.12), transparent);
+    .aarti-card::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(45deg,rgba(243,156,18,.08),transparent,rgba(230,126,34,.06));
+      pointer-events:none;
     }
-    .aarti-card{background: var(--card); border: 1px solid rgba(124,58,237,.15); box-shadow: var(--shadow);}
-    .mantra{font-size: 1.34rem; line-height: 1.9;}
-    .mantra p{margin-bottom: .9rem}
-    .doha{font-weight:600; color: var(--brand)}
-    .divider{height:2px; background: linear-gradient(90deg, transparent, var(--ring), transparent); opacity:.75}
-    .pill{border:1px solid rgba(124,58,237,.25); background: rgba(124,58,237,.06)}
-    .btn-brand{background: var(--brand); color:#fff; border: none}
-    .btn-brand:hover{filter: brightness(1.05)}
-    .btn-ghost{border:1px solid rgba(124,58,237,.35)}
-    .shadow-soft{box-shadow: var(--shadow)}
-    .ornament{opacity:.45; transform: rotate(8deg)}
+    .mantra{font-size:1.28rem;line-height:1.9}
+    .mantra p{margin-bottom:1rem}
+    .doha{font-weight:600;color:var(--brand-2);text-align:center}
+    .btn-brand{background:var(--brand);color:#fff;border:none;border-radius:50px;padding:.5rem 1.2rem;box-shadow:0 4px 10px rgba(230,126,34,.3);transition:.2s}
+    .btn-brand:hover{filter:brightness(1.05);box-shadow:0 6px 16px rgba(211,84,0,.35)}
+    .ornament{display:block;margin:0 auto 1rem;max-width:90px;opacity:.9}
     @media print{
       .no-print{display:none!important}
       body{background:#fff}
-      .aarti-card{box-shadow:none;border:none}
+      .aarti-card{border:none;box-shadow:none}
     }
   </style>
 </head>
-<body data-theme="light">
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg sticky-top border-bottom" style="background:rgba(255,255,255,.7)" id="topNav" aria-label="मुख्य नेविगेशन">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-        <span class="badge rounded-pill text-bg-light pill brand-badge">ॐ</span>
-        <strong>माँ सरस्वती आरती</strong>
-      </a>
-      <div class="d-flex gap-2 ms-auto">
-        <button class="btn btn-sm btn-ghost" id="toggleThemeBtn" type="button" title="डार्क मोड / लाइट मोड">
-          <i class="bi bi-moon-stars"></i>
-        </button>
-        <a class="btn btn-sm btn-brand" href="#aarti">आरती देखें</a>
-      </div>
-    </div>
-  </nav>
+<body>
 
-  <!-- Hero -->
-  
-
-  <div class="divider"></div>
-
-  <!-- Aarti Card -->
-  <main class="py-5" id="aarti">
+  <main class="py-4">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-9 col-xl-8">
+        <div class="col-lg-8">
           <article class="aarti-card rounded-4 p-4 p-md-5">
-            <header class="mb-3">
-              <div class="d-flex align-items-center gap-2 mb-1">
-                <span class="badge text-bg-light pill small">आरती</span>
-                <span class="text-secondary small">हिंदी • देवनागरी</span>
-              </div>
-              <h2 class="h1 mb-0">🌼 आरती माँ सरस्वती जी की</h2>
-              <p class="text-secondary mb-0">बसंत पंचमी और दैनिक पूजन हेतु उपयुक्त</p>
+            <!-- Ornament (Veena Illustration in SVG) -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="ornament" viewBox="0 0 64 64" fill="none">
+              <path d="M32 2c-4 10-10 18-20 22-4 2-6 6-6 10 0 10 12 18 26 18s26-8 26-18c0-4-2-8-6-10-10-4-16-12-20-22z" fill="#f39c12"/>
+              <circle cx="32" cy="40" r="8" fill="#fff8f0" stroke="#d35400" stroke-width="2"/>
+            </svg>
+
+            <header class="mb-3 text-center">
+              <h1 class="h3 mb-1">🌼 आरती माँ सरस्वती जी की</h1>
+              <p class="text-muted">ॐ जय सरस्वती माता — बसंत पंचमी एवं दैनिक पूजन हेतु</p>
             </header>
 
-            <section class="mantra" id="aartiText" aria-label="आरती का पाठ">
-<p><strong>जय सरस्वती माता, मैया जय सरस्वती माता।<br>सद्गुण वैभव शालिनी, त्रिभुवन विख्याता॥</strong></p>
+            <section class="mantra" id="aartiText">
+              <p><strong>ॐ जय सरस्वती माता, जय जय सरस्वती माता।<br>सद्गुण वैभव शालिनी, त्रिभुवन विख्याता॥</strong></p>
 
-<p><em>(जय सरस्वती माता...)</em></p>
+              <p>ॐ जय सरस्वती माता, जय जय सरस्वती माता॥</p>
 
-<p>चंद्रवदनी पद्मासिनी, द्युतिमंगला।<br>वीणा पुस्तक हस्तिनी, मालक माला॥</p>
+              <p>चन्द्रवदनि पद्मासिनी, ध्रुति मंगलकारी।<br>
+              सोहें शुभ हंस सवारी, अतुल तेजधारी॥</p>
 
-<p><em>(जय सरस्वती माता...)</em></p>
+              <p>ॐ जय सरस्वती माता, जय जय सरस्वती माता॥</p>
 
-<p>कीरत शिव-शंकर माता, ब्रह्मा-विष्णु वंदिता।<br>प्रणव स्वरूपिणी माता, भक्ति प्रदाता॥</p>
+              <p>बाएं कर में वीणा, दाएं कर में माला।<br>
+              शीश मुकुट मणि सोहें, गल मोतियन माला॥</p>
 
-<p><em>(जय सरस्वती माता...)</em></p>
+              <p>ॐ जय सरस्वती माता, जय जय सरस्वती माता॥</p>
 
-<p>सत्यज्ञान दायिनी माता, सुख संपत्ति कारी।<br>दुष्ट दमन करणि माता, विघ्न विनाशिनी॥</p>
+              <p>देवी शरण जो आएं, उनका उद्धार किया।<br>
+              पैठी मंथरा दासी, रावण संहार किया॥</p>
 
-<p><em>(जय सरस्वती माता...)</em></p>
+              <p>ॐ जय सरस्वती माता, जय जय सरस्वती माता॥</p>
 
-<p>दे वीणा-रवकारिणी, गान रसिनी।<br>पाप हरो भव-दुख-नाशो, मोक्ष-प्रदायिनी॥</p>
+              <p>विद्या ज्ञान प्रदायिनि, ज्ञान प्रकाश भरो।<br>
+              मोह अज्ञान और तिमिर का, जग से नाश करो॥</p>
 
-<p class="doha">॥ इति आरती ॥</p>
+              <p>ॐ जय सरस्वती माता, जय जय सरस्वती माता॥</p>
+
+              <p class="doha">॥ इति आरती ॥</p>
             </section>
 
-            <hr class="my-4">
-
-            <section aria-label="पूजन विधि संक्षेप">
-              <h3 class="h5">संक्षेप पूजन-विधि</h3>
-              <ol class="text-secondary">
-                <li>स्वच्छ आसन पर पूर्व या उत्तर की ओर मुख करके बैठें।</li>
-                <li>दीप, धूप, पुष्प अर्पित कर आरती का पाठ करें।</li>
-                <li>छात्र/विद्यार्थी पुस्तक/कलम पर तिलक लगाकर आशीर्वाद लें।</li>
-              </ol>
-            </section>
-
-            <footer class="mt-4 d-flex flex-wrap gap-2 no-print">
-              <a class="btn btn-ghost" href="#topNav"><i class="bi bi-arrow-up"></i> ऊपर जाएँ</a>
-              <button class="btn btn-outline-primary" id="toggleFont"><i class="bi bi-type"></i> बड़ा फ़ॉन्ट</button>
+            <footer class="mt-4 d-flex justify-content-center no-print">
+              <button class="btn btn-brand" id="copyBtn">📋 कॉपी टेक्स्ट</button>
             </footer>
           </article>
         </div>
@@ -136,62 +104,23 @@
     </div>
   </main>
 
-  <footer class="py-4 border-top text-center small text-secondary">
-    <div class="container">
-      <span>© <span id="year">2025</span> आरती संग्रह • निशुल्क उपयोग</span>
-    </div>
+  <footer class="py-3 text-center small text-muted">
+    © <span id="year"></span> माँ सरस्वती आरती संग्रह
   </footer>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script>
-    // Year
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('year').textContent=new Date().getFullYear();
 
-    // Theme toggle with localStorage
-    const root = document.documentElement;
-    const toggleBtn = document.getElementById('toggleThemeBtn');
-    const savedTheme = localStorage.getItem('theme-preference');
-    if (savedTheme) document.body.setAttribute('data-theme', savedTheme);
-    toggleBtn.addEventListener('click', () => {
-      const next = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-      document.body.setAttribute('data-theme', next);
-      localStorage.setItem('theme-preference', next);
-    });
-
-    // Copy aarti text
-    const copyBtn = document.getElementById('copyBtn');
-    copyBtn?.addEventListener('click', async () => {
-      const text = document.getElementById('aartiText').innerText.trim();
+    // Copy to clipboard
+    const copyBtn=document.getElementById('copyBtn');
+    copyBtn.addEventListener('click',async()=>{
+      const text=document.getElementById('aartiText').innerText.trim();
       try{
         await navigator.clipboard.writeText(text);
-        copyBtn.innerHTML = '<i class="bi bi-clipboard-check"></i> कॉपी हो गया';
-        setTimeout(()=> copyBtn.innerHTML = '<i class="bi bi-clipboard"></i> कॉपी टेक्स्ट', 1800);
-      } catch(e){
-        alert('कॉपी करने में समस्या हुई।');
-      }
-    });
-
-    // Download TXT
-    document.getElementById('downloadTxt')?.addEventListener('click', () => {
-      const blob = new Blob([document.getElementById('aartiText').innerText], {type: 'text/plain;charset=utf-8'});
-      const a = document.createElement('a');
-      a.href = URL.createObjectURL(blob);
-      a.download = 'Maa-Saraswati-Aarti-Hindi.txt';
-      a.click();
-      URL.revokeObjectURL(a.href);
-    });
-
-    // Increase/Decrease font size toggle
-    const mantraEl = document.querySelector('.mantra');
-    const toggleFont = document.getElementById('toggleFont');
-    let big = false;
-    toggleFont?.addEventListener('click', () => {
-      big = !big;
-      mantraEl.style.fontSize = big ? '1.55rem' : '1.34rem';
-      toggleFont.innerHTML = big ? '<i class="bi bi-type"></i> सामान्य फ़ॉन्ट' : '<i class="bi bi-type"></i> बड़ा फ़ॉन्ट';
+        copyBtn.textContent="✅ कॉपी हो गया";
+        setTimeout(()=>copyBtn.textContent="📋 कॉपी टेक्स्ट",2000);
+      }catch(e){alert("कॉपी करने में समस्या हुई");}
     });
   </script>
-
-
-</body></html>
+</body>
+</html>
